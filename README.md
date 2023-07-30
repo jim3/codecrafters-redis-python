@@ -23,6 +23,8 @@ git push origin master
 
 That's all!
 
+---
+
 # Stage 2 & beyond
 
 Note: This section is for stages 2 and beyond.
