@@ -6,7 +6,7 @@ def socket_server_req(clientsocket):
     if request == "PING":
         response = "+PONG\r\n"
     else:
-        response = "Error"
+        response = "Error\r\n"
     clientsocket.sendall(response.encode("utf-8"))
     clientsocket.close()
 
@@ -21,7 +21,7 @@ def main():
     except KeyboardInterrupt:
         pass
     server_socket.close()
-
+``
 
 if __name__ == "__main__":
     main()
