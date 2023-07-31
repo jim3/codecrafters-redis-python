@@ -4,7 +4,7 @@ import socket
 def socket_req(clientsocket):
     request = clientsocket.recv(1024)
     if request == b"PING":
-        response = b"+PONG\r\n"
+        response = b"$4\r\nPONG\r\n"
     else:
         response = b"-Error\r\n"
     clientsocket.send(response)
