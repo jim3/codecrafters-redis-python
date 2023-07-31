@@ -6,7 +6,7 @@ def socket_req(clientsocket):
     if request == b"PING":
         response = b"+PONG\r\n"
     else:
-        response = b"Error"
+        response = b"-Error\r\n"
     clientsocket.send(response)
 
 
