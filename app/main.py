@@ -6,7 +6,7 @@ def socket_server_req(clientsocket):
     if request == "PING":
         response = "+PONG\r\n"
     else:
-        response = "Error\r\n"
+        response = "-Error message\r\n"
     clientsocket.sendall(response.encode("utf-8"))
     clientsocket.close()
 
